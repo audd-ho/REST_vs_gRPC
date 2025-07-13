@@ -1,0 +1,150 @@
+audricho@SISI1-DEV3 MINGW64 ~/Documents/springboot_attemtps (main)
+$ nano .gitignore
+
+audricho@SISI1-DEV3 MINGW64 ~/Documents/springboot_attemtps (main)
+$ ls
+Mutlithreading_Tester/  Mutlithreading_Tester.zip  RESTAttempt/  demo.zip  gRPCAttempt/  gRPCAttempt.zip  protocurl_1.9.4_windows_amd64/  protocurl_1.9.4_windows_amd64.zip
+
+audricho@SISI1-DEV3 MINGW64 ~/Documents/springboot_attemtps (main)
+$ git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+audricho@SISI1-DEV3 MINGW64 ~/Documents/springboot_attemtps (main)
+$ git add .
+it
+audricho@SISI1-DEV3 MINGW64 ~/Documents/springboot_attemtps (main)
+$ git commit -m "added gitignore to ignore large *testResult.txt files"
+[main b152734] added gitignore to ignore large *testResult.txt files
+ 1 file changed, 2 insertions(+)
+ create mode 100644 .gitignore
+
+audricho@SISI1-DEV3 MINGW64 ~/Documents/springboot_attemtps (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+audricho@SISI1-DEV3 MINGW64 ~/Documents/springboot_attemtps (main)
+$ grep
+Usage: grep [OPTION]... PATTERN [FILE]...
+Try 'grep --help' for more information.
+
+audricho@SISI1-DEV3 MINGW64 ~/Documents/springboot_attemtps (main)
+$ git ls-files -z | grep -z "testResult.txt" | xargs -0 git rm --cached
+rm 'Mutlithreading_Tester/scripts_ref/G_at/P/testResult.txt'
+rm 'Mutlithreading_Tester/scripts_ref/G_at/PI/biometrics_bytes/ORIGINAL_SERVICE/PI_B_testResult.txt'
+rm 'Mutlithreading_Tester/scripts_ref/G_at/PI/biometrics_bytes/PI_B_testResult.txt'
+rm 'Mutlithreading_Tester/scripts_ref/G_at/PI/biometrics_string/PI_testResult.txt'
+rm 'Mutlithreading_Tester/scripts_ref/R_at/protobuf_serialization_format/P/testResult.txt'
+rm 'Mutlithreading_Tester/scripts_ref/R_at/protobuf_serialization_format/PI/testResult.txt'
+rm 'Mutlithreading_Tester/scripts_ref/R_at/protobuf_serialization_format/PIB/extra_PersonImageRepo/testResult.txt'
+rm 'Mutlithreading_Tester/scripts_ref/R_at/protobuf_serialization_format/PIB/testResult.txt'
+rm 'Mutlithreading_Tester/scripts_ref/R_at/protobuf_serialization_format/old/P/testResult.txt'
+rm 'Mutlithreading_Tester/scripts_ref/R_at/protobuf_serialization_format/old/PI/PI_testResult.txt'
+rm 'Mutlithreading_Tester/scripts_ref/R_at/string_json/P/testResult.txt'
+rm 'Mutlithreading_Tester/scripts_ref/R_at/string_json/PI/PI_testResult.txt'
+rm 'RESTAttempt/ACTUAL_TEST/protobuf_serialization_format/P/testResult.txt'
+rm 'RESTAttempt/ACTUAL_TEST/protobuf_serialization_format/PI/testResult.txt'
+rm 'RESTAttempt/ACTUAL_TEST/protobuf_serialization_format/PIB/extra_PersonImageRepo/testResult.txt'
+rm 'RESTAttempt/ACTUAL_TEST/protobuf_serialization_format/PIB/testResult.txt'
+rm 'RESTAttempt/ACTUAL_TEST/protobuf_serialization_format/old/P/testResult.txt'
+rm 'RESTAttempt/ACTUAL_TEST/protobuf_serialization_format/old/PI/PI_testResult.txt'
+rm 'RESTAttempt/ACTUAL_TEST/string_json/P/testResult.txt'
+rm 'RESTAttempt/ACTUAL_TEST/string_json/PI/PI_testResult.txt'
+rm 'gRPCAttempt/ACTUAL_TEST/P/testResult.txt'
+rm 'gRPCAttempt/ACTUAL_TEST/PI/biometrics_bytes/ORIGINAL_SERVICE/PI_B_testResult.txt'
+rm 'gRPCAttempt/ACTUAL_TEST/PI/biometrics_bytes/PI_B_testResult.txt'
+rm 'gRPCAttempt/ACTUAL_TEST/PI/biometrics_string/PI_testResult.txt'
+
+audricho@SISI1-DEV3 MINGW64 ~/Documents/springboot_attemtps (main)
+$ find -type f -name "*testResult*"
+./gRPCAttempt/ACTUAL_TEST/P/testResult.txt
+./gRPCAttempt/ACTUAL_TEST/PI/biometrics_bytes/ORIGINAL_SERVICE/PI_B_testResult.txt
+./gRPCAttempt/ACTUAL_TEST/PI/biometrics_bytes/PI_B_testResult.txt
+./gRPCAttempt/ACTUAL_TEST/PI/biometrics_string/PI_testResult.txt
+./Mutlithreading_Tester/scripts_ref/G_at/P/testResult.txt
+./Mutlithreading_Tester/scripts_ref/G_at/PI/biometrics_bytes/ORIGINAL_SERVICE/PI_B_testResult.txt
+./Mutlithreading_Tester/scripts_ref/G_at/PI/biometrics_bytes/PI_B_testResult.txt
+./Mutlithreading_Tester/scripts_ref/G_at/PI/biometrics_string/PI_testResult.txt
+./Mutlithreading_Tester/scripts_ref/R_at/protobuf_serialization_format/old/P/testResult.txt
+./Mutlithreading_Tester/scripts_ref/R_at/protobuf_serialization_format/old/PI/PI_testResult.txt
+./Mutlithreading_Tester/scripts_ref/R_at/protobuf_serialization_format/P/testResult.txt
+./Mutlithreading_Tester/scripts_ref/R_at/protobuf_serialization_format/PI/testResult.txt
+./Mutlithreading_Tester/scripts_ref/R_at/protobuf_serialization_format/PIB/extra_PersonImageRepo/testResult.txt
+./Mutlithreading_Tester/scripts_ref/R_at/protobuf_serialization_format/PIB/testResult.txt
+./Mutlithreading_Tester/scripts_ref/R_at/string_json/P/testResult.txt
+./Mutlithreading_Tester/scripts_ref/R_at/string_json/PI/PI_testResult.txt
+./RESTAttempt/ACTUAL_TEST/protobuf_serialization_format/old/P/testResult.txt
+./RESTAttempt/ACTUAL_TEST/protobuf_serialization_format/old/PI/PI_testResult.txt
+./RESTAttempt/ACTUAL_TEST/protobuf_serialization_format/P/testResult.txt
+./RESTAttempt/ACTUAL_TEST/protobuf_serialization_format/PI/testResult.txt
+./RESTAttempt/ACTUAL_TEST/protobuf_serialization_format/PIB/extra_PersonImageRepo/testResult.txt
+./RESTAttempt/ACTUAL_TEST/protobuf_serialization_format/PIB/testResult.txt
+./RESTAttempt/ACTUAL_TEST/string_json/P/testResult.txt
+./RESTAttempt/ACTUAL_TEST/string_json/PI/PI_testResult.txt
+
+audricho@SISI1-DEV3 MINGW64 ~/Documents/springboot_attemtps (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    Mutlithreading_Tester/scripts_ref/G_at/P/testResult.txt
+        deleted:    Mutlithreading_Tester/scripts_ref/G_at/PI/biometrics_bytes/ORIGINAL_SERVICE/PI_B_testResult.txt
+        deleted:    Mutlithreading_Tester/scripts_ref/G_at/PI/biometrics_bytes/PI_B_testResult.txt
+        deleted:    Mutlithreading_Tester/scripts_ref/G_at/PI/biometrics_string/PI_testResult.txt
+        deleted:    Mutlithreading_Tester/scripts_ref/R_at/protobuf_serialization_format/P/testResult.txt
+        deleted:    Mutlithreading_Tester/scripts_ref/R_at/protobuf_serialization_format/PI/testResult.txt
+        deleted:    Mutlithreading_Tester/scripts_ref/R_at/protobuf_serialization_format/PIB/extra_PersonImageRepo/testResult.txt
+        deleted:    Mutlithreading_Tester/scripts_ref/R_at/protobuf_serialization_format/PIB/testResult.txt
+        deleted:    Mutlithreading_Tester/scripts_ref/R_at/protobuf_serialization_format/old/P/testResult.txt
+        deleted:    Mutlithreading_Tester/scripts_ref/R_at/protobuf_serialization_format/old/PI/PI_testResult.txt
+        deleted:    Mutlithreading_Tester/scripts_ref/R_at/string_json/P/testResult.txt
+        deleted:    Mutlithreading_Tester/scripts_ref/R_at/string_json/PI/PI_testResult.txt
+        deleted:    RESTAttempt/ACTUAL_TEST/protobuf_serialization_format/P/testResult.txt
+        deleted:    RESTAttempt/ACTUAL_TEST/protobuf_serialization_format/PI/testResult.txt
+        deleted:    RESTAttempt/ACTUAL_TEST/protobuf_serialization_format/PIB/extra_PersonImageRepo/testResult.txt
+        deleted:    RESTAttempt/ACTUAL_TEST/protobuf_serialization_format/PIB/testResult.txt
+        deleted:    RESTAttempt/ACTUAL_TEST/protobuf_serialization_format/old/P/testResult.txt
+        deleted:    RESTAttempt/ACTUAL_TEST/protobuf_serialization_format/old/PI/PI_testResult.txt
+        deleted:    RESTAttempt/ACTUAL_TEST/string_json/P/testResult.txt
+        deleted:    RESTAttempt/ACTUAL_TEST/string_json/PI/PI_testResult.txt
+        deleted:    gRPCAttempt/ACTUAL_TEST/P/testResult.txt
+        deleted:    gRPCAttempt/ACTUAL_TEST/PI/biometrics_bytes/ORIGINAL_SERVICE/PI_B_testResult.txt
+        deleted:    gRPCAttempt/ACTUAL_TEST/PI/biometrics_bytes/PI_B_testResult.txt
+        deleted:    gRPCAttempt/ACTUAL_TEST/PI/biometrics_string/PI_testResult.txt
+
+
+audricho@SISI1-DEV3 MINGW64 ~/Documents/springboot_attemtps (main)
+$ git commit -m "Removed *testResult.txt files previously in initial commit (too large in size for git normally, need git LFS if want to push them next time)"
+[main c942e18] Removed *testResult.txt files previously in initial commit (too large in size for git normally, need git LFS if want to push them next time)
+ 24 files changed, 1671672 deletions(-)
+ delete mode 100644 Mutlithreading_Tester/scripts_ref/G_at/P/testResult.txt
+ delete mode 100644 Mutlithreading_Tester/scripts_ref/G_at/PI/biometrics_bytes/ORIGINAL_SERVICE/PI_B_testResult.txt
+ delete mode 100644 Mutlithreading_Tester/scripts_ref/G_at/PI/biometrics_bytes/PI_B_testResult.txt
+ delete mode 100644 Mutlithreading_Tester/scripts_ref/G_at/PI/biometrics_string/PI_testResult.txt
+ delete mode 100644 Mutlithreading_Tester/scripts_ref/R_at/protobuf_serialization_format/P/testResult.txt
+ delete mode 100644 Mutlithreading_Tester/scripts_ref/R_at/protobuf_serialization_format/PI/testResult.txt
+ delete mode 100644 Mutlithreading_Tester/scripts_ref/R_at/protobuf_serialization_format/PIB/extra_PersonImageRepo/testResult.txt
+ delete mode 100644 Mutlithreading_Tester/scripts_ref/R_at/protobuf_serialization_format/PIB/testResult.txt
+ delete mode 100644 Mutlithreading_Tester/scripts_ref/R_at/protobuf_serialization_format/old/P/testResult.txt
+ delete mode 100644 Mutlithreading_Tester/scripts_ref/R_at/protobuf_serialization_format/old/PI/PI_testResult.txt
+ delete mode 100644 Mutlithreading_Tester/scripts_ref/R_at/string_json/P/testResult.txt
+ delete mode 100644 Mutlithreading_Tester/scripts_ref/R_at/string_json/PI/PI_testResult.txt
+ delete mode 100644 RESTAttempt/ACTUAL_TEST/protobuf_serialization_format/P/testResult.txt
+ delete mode 100644 RESTAttempt/ACTUAL_TEST/protobuf_serialization_format/PI/testResult.txt
+ delete mode 100644 RESTAttempt/ACTUAL_TEST/protobuf_serialization_format/PIB/extra_PersonImageRepo/testResult.txt
+ delete mode 100644 RESTAttempt/ACTUAL_TEST/protobuf_serialization_format/PIB/testResult.txt
+ delete mode 100644 RESTAttempt/ACTUAL_TEST/protobuf_serialization_format/old/P/testResult.txt
+ delete mode 100644 RESTAttempt/ACTUAL_TEST/protobuf_serialization_format/old/PI/PI_testResult.txt
+ delete mode 100644 RESTAttempt/ACTUAL_TEST/string_json/P/testResult.txt
+ delete mode 100644 RESTAttempt/ACTUAL_TEST/string_json/PI/PI_testResult.txt
+ delete mode 100644 gRPCAttempt/ACTUAL_TEST/P/testResult.txt
+ delete mode 100644 gRPCAttempt/ACTUAL_TEST/PI/biometrics_bytes/ORIGINAL_SERVICE/PI_B_testResult.txt
+ delete mode 100644 gRPCAttempt/ACTUAL_TEST/PI/biometrics_bytes/PI_B_testResult.txt
+ delete mode 100644 gRPCAttempt/ACTUAL_TEST/PI/biometrics_string/PI_testResult.txt
+
+
