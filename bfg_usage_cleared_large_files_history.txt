@@ -1,0 +1,307 @@
+audricho@SISI1-DEV3 MINGW64 ~/Documents/springboot_attemtps (main)
+$ java -jar bfg-1.14.0.jar --strip-blobs-bigger-than 100M
+
+Using repo : C:\Users\audricho\Documents\springboot_attemtps\.git
+
+Scanning packfile for large blobs completed in 10 ms.
+Warning : no large blobs matching criteria found in packfiles - does the repo need to be packed?
+Please specify tasks for The BFG :
+bfg 1.14.0
+Usage: bfg [options] [<repo>]
+
+  -b, --strip-blobs-bigger-than <size>
+                           strip blobs bigger than X (eg '128K', '1M', etc)
+  -B, --strip-biggest-blobs NUM
+                           strip the top NUM biggest blobs
+  -bi, --strip-blobs-with-ids <blob-ids-file>
+                           strip blobs with the specified Git object ids
+  -D, --delete-files <glob>
+                           delete files with the specified names (eg '*.class', '*.{txt,log}' - matches on file name, not path within repo)
+  --delete-folders <glob>  delete folders with the specified names (eg '.svn', '*-tmp' - matches on folder name, not path within repo)
+  --convert-to-git-lfs <value>
+                           extract files with the specified names (eg '*.zip' or '*.mp4') into Git LFS
+  -rt, --replace-text <expressions-file>
+                           filter content of files, replacing matched text. Match expressions should be listed in the file, one expression per line - by default, each expression is treated as a literal, but 'regex:' & 'glob:' prefixes are supported, with '==>' to specify a replacement string other than the default of '***REMOVED***'.
+  -fi, --filter-content-including <glob>
+                           do file-content filtering on files that match the specified expression (eg '*.{txt,properties}')
+  -fe, --filter-content-excluding <glob>
+                           don't do file-content filtering on files that match the specified expression (eg '*.{xml,pdf}')
+  -fs, --filter-content-size-threshold <size>
+                           only do file-content filtering on files smaller than <size> (default is 1048576 bytes)
+  -p, --protect-blobs-from <refs>
+                           protect blobs that appear in the most recent versions of the specified refs (default is 'HEAD')
+  --no-blob-protection     allow the BFG to modify even your *latest* commit. Not recommended: you should have already ensured your latest commit is clean.
+  --private                treat this repo-rewrite as removing private data (for example: omit old commit ids from commit messages)
+  --massive-non-file-objects-sized-up-to <size>
+                           increase memory usage to handle over-size Commits, Tags, and Trees that are up to X in size (eg '10M')
+  <repo>                   file path for Git repository to clean
+
+audricho@SISI1-DEV3 MINGW64 ~/Documents/springboot_attemtps (main)
+$ git gc --aggressive --prune=now
+Enumerating objects: 333, done.
+Counting objects: 100% (333/333), done.
+Delta compression using up to 12 threads
+fatal: failed to run repack6/299)
+
+
+audricho@SISI1-DEV3 MINGW64 ~/Documents/springboot_attemtps (main)
+$ git gc --aggressive --prune=now
+Enumerating objects: 333, done.
+Counting objects: 100% (333/333), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (299/299), done.
+Writing objects: 100% (333/333), done.
+Total 333 (delta 152), reused 0 (delta 0), pack-reused 0 (from 0)
+
+audricho@SISI1-DEV3 MINGW64 ~/Documents/springboot_attemtps (main)
+$ java -jar bfg-1.14.0.jar --strip-blobs-bigger-than 100M
+
+Using repo : C:\Users\audricho\Documents\springboot_attemtps\.git
+
+Scanning packfile for large blobs: 333
+Scanning packfile for large blobs completed in 28 ms.
+Found 7 blob ids for large blobs - biggest=436459855 smallest=159791684
+Total size (unpacked)=2154971351
+Found 178 objects to protect
+Found 2 commit-pointing refs : HEAD, refs/heads/main
+
+Protected commits
+-----------------
+
+These are your protected commits, and so their contents will NOT be altered:
+
+ * commit d12b2281 (protected by 'HEAD')
+
+Cleaning
+--------
+
+Found 4 commits
+Cleaning commits:       100% (4/4)
+Cleaning commits completed in 546 ms.
+
+Updating 1 Ref
+--------------
+
+        Ref               Before     After
+        -------------------------------------
+        refs/heads/main | d12b2281 | 99355b5b
+
+Updating references:    100% (1/1)
+...Ref update completed in 34 ms.
+
+Commit Tree-Dirt History
+------------------------
+
+        Earliest      Latest
+        |                  |
+          D    D    m    m
+
+        D = dirty commits (file tree fixed)
+        m = modified commits (commit message or parents changed)
+        . = clean commits (no changes to file tree)
+
+                                Before     After
+        -------------------------------------------
+        First modified commit | 4c6bc8fc | 58912d1e
+        Last dirty commit     | b1527340 | 1f244b36
+
+Deleted files
+-------------
+
+        Filename              Git id
+        -----------------------------------------------------------------------------------
+        PI_B_testResult.txt | 759fb729 (304.8 MB), 6a39644f (304.8 MB)
+        PI_testResult.txt   | 7c407b83 (152.4 MB), d2eb5913 (155.9 MB)
+        testResult.txt      | 16fe1379 (416.2 MB), c40beee0 (416.2 MB), bf0d1413 (304.8 MB)
+
+
+In total, 26 object ids were changed. Full details are logged here:
+
+        C:\Users\audricho\Documents\springboot_attemtps.bfg-report\2025-07-14\00-25-10
+
+BFG run is complete! When ready, run: git reflog expire --expire=now --all && git gc --prune=now --aggressive
+
+audricho@SISI1-DEV3 MINGW64 ~/Documents/springboot_attemtps (main)
+$ git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bfg-1.14.0.jar
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+audricho@SISI1-DEV3 MINGW64 ~/Documents/springboot_attemtps (main)
+$ git reflog expire --expire=now --all && git gc --prune=now --aggressive
+Enumerating objects: 330, done.
+Counting objects: 100% (330/330), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (289/289), done.
+Writing objects: 100% (330/330), done.
+Total 330 (delta 144), reused 163 (delta 0), pack-reused 0 (from 0)
+
+audricho@SISI1-DEV3 MINGW64 ~/Documents/springboot_attemtps (main)
+$ git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bfg-1.14.0.jar
+        springboot_attemtps.bfg-report/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+audricho@SISI1-DEV3 MINGW64 ~/Documents/springboot_attemtps (main)
+$
+Commit Tree-Dirt History
+------------------------
+
+        Earliest      Latest
+        |                  |
+          D    D    m    m
+
+        D = dirty commits (file tree fixed)
+        m = modified commits (commit message or parents changed)
+        . = clean commits (no changes to file tree)
+
+                                Before     After
+        -------------------------------------------
+        First modified commit | 4c6bc8fc | 58912d1e
+        Last dirty commit     | b1527340 | 1f244b36
+
+Deleted files
+-------------
+
+        Filename              Git id
+        -----------------------------------------------------------------------------------
+        PI_B_testResult.txt | 759fb729 (304.8 MB), 6a39644f (304.8 MB)
+        PI_testResult.txt   | 7c407b83 (152.4 MB), d2eb5913 (155.9 MB)
+        testResult.txt      | 16fe1379 (416.2 MB), c40beee0 (416.2 MB), bf0d1413 (304.8 MB)
+
+
+In total, 26 object ids were changed. Full details are logged here:
+
+        C:\Users\audricho\Documents\springboot_attemtps.bfg-report\2025-07-14\00-25-10
+
+BFG run is complete! When ready, run: git reflog expire --expire=now --all && git gc --prune=now --aggressive
+
+audricho@SISI1-DEV3 MINGW64 ~/Documents/springboot_attemtps (main)
+$ git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bfg-1.14.0.jar
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+audricho@SISI1-DEV3 MINGW64 ~/Documents/springboot_attemtps (main)
+$ git reflog expire --expire=now --all && git gc --prune=now --aggressive
+Enumerating objects: 330, done.
+Counting objects: 100% (330/330), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (289/289), done.
+Writing objects: 100% (330/330), done.
+Total 330 (delta 144), reused 163 (delta 0), pack-reused 0 (from 0)
+
+audricho@SISI1-DEV3 MINGW64 ~/Documents/springboot_attemtps (main)
+$ git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bfg-1.14.0.jar
+aaaa^Cg added to commit but untracked files present (use "git add" to track)
+
+
+audricho@SISI1-DEV3 MINGW64 ~/Documents/springboot_attemtps (main)
+$
+Updating 1 Ref
+--------------
+
+        Ref               Before     After
+        -------------------------------------
+        refs/heads/main | d12b2281 | 99355b5b
+
+Updating references:    100% (1/1)
+...Ref update completed in 34 ms.
+
+Commit Tree-Dirt History
+------------------------
+
+        Earliest      Latest
+        |                  |
+          D    D    m    m
+
+        D = dirty commits (file tree fixed)
+        m = modified commits (commit message or parents changed)
+        . = clean commits (no changes to file tree)
+
+                                Before     After
+        -------------------------------------------
+        First modified commit | 4c6bc8fc | 58912d1e
+        Last dirty commit     | b1527340 | 1f244b36
+
+Deleted files
+-------------
+
+        Filename              Git id
+        -----------------------------------------------------------------------------------
+        PI_B_testResult.txt | 759fb729 (304.8 MB), 6a39644f (304.8 MB)
+        PI_testResult.txt   | 7c407b83 (152.4 MB), d2eb5913 (155.9 MB)
+        testResult.txt      | 16fe1379 (416.2 MB), c40beee0 (416.2 MB), bf0d1413 (304.8 MB)
+$
+Updating 1 Ref
+--------------
+
+        Ref               Before     After
+        -------------------------------------
+        refs/heads/main | d12b2281 | 99355b5b
+
+Updating references:    100% (1/1)
+...Ref update completed in 34 ms.
+
+Commit Tree-Dirt History
+------------------------
+
+        Earliest      Latest
+        |                  |
+          D    D    m    m
+
+        D = dirty commits (file tree fixed)
+        m = modified commits (commit message or parents changed)
+        . = clean commits (no changes to file tree)
+
+                                Before     After
+        -------------------------------------------
+        First modified commit | 4c6bc8fc | 58912d1e
+        Last dirty commit     | b1527340 | 1f244b36
+
+Deleted files
+-------------
+
+        Filename              Git id
+        -----------------------------------------------------------------------------------
+        PI_B_testResult.txt | 759fb729 (304.8 MB), 6a39644f (304.8 MB)
+        PI_testResult.txt   | 7c407b83 (152.4 MB), d2eb5913 (155.9 MB)
+        testResult.txt      | 16fe1379 (416.2 MB), c40beee0 (416.2 MB), bf0d1413 (304.8 MB)
+
+
+In total, 26 object ids were changed. Full details are logged here:
+
+        C:\Users\audricho\Documents\springboot_attemtps.bfg-report\2025-07-14\00-25-10
+
+BFG run is complete! When ready, run: git reflog expire --expire=now --all && git gc --prune=now --aggressive
+
+audricho@SISI1-DEV3 MINGW64 ~/Documents/springboot_attemtps (main)
+$ git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bfg-1.14.0.jar
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+audricho@SISI1-DEV3 MINGW64 ~/Documents/springboot_attemtps (main)
+$ git reflog expire --expire=now --all && git gc --prune=now --aggressive
+Enumerating objects: 330, done.
+Counting objects: 100% (330/330), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (289/289), done.
+audricho@SISI1-DEV3 MINGW64 ~/Documents/springboot_attemtps (main)
