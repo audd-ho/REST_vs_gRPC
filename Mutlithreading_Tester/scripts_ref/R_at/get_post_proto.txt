@@ -1,0 +1,16 @@
+audricho@SISI1-DEV3 MINGW64 ~/Documents/springboot_attemtps
+$ curl -X GET http://localhost:8080/PeopleProto/
+"DefaultEmail@gmail.com*
+DefaultName8OH
+audricho@SISI1-DEV3 MINGW64 ~/Documents/springboot_attemtps
+$ curl -X POST http://localhost:8080/PeopleProto/
+"DefaultEmail@gmail.com*
+DefaultName8OH
+
+audricho@SISI1-DEV3 MINGW64 ~/Documents/springboot_attem
+tps/RESTAttempt/ACTUAL_TEST/protobuf_serialization_format/mixed_P/consume_protobuf
+$ ./protocurl_1.9.4_windows_amd64/bin/protocurl.exe -I p
+roto -i ..NationalityDTO -o ..PersonProtobufDTO -u http://localhost:8080/PeopleProto/proto -d "nationality: SG"
+=========================== POST Request  Text    =========================== >>>
+nationality:  SG
+Error: Request was unsuccessful. Received response status code outside of 2XX. Got: HTTP/1.1 500

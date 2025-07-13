@@ -1,0 +1,54 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.example.gRPCAttempt.gRPC";
+// option java_outer_classname = "GreetProto";
+
+package people;
+
+import "enums.proto";
+import "Person.proto";
+
+/*
+message PersonProtobufDTO {
+    int64 id = 1;
+    string identificationNumber = 2;
+    string passportNumber = 3;
+    string email = 4;
+    string name = 5;
+    int age = 6;
+    Nations nationality = 7;
+    Nations currentCountry = 8;
+    MaritalStatus maritalStatus = 9;
+    int32 children = 10;
+}
+*/
+
+message NationalityDTO {
+    Nations nationality = 1;
+}
+
+message PersonNameEmailDTO {
+    string name = 1;
+    string email = 2;
+}
+
+message PersonNameEmailListDTO {
+    repeated PersonNameEmailDTO personNameEmailList = 1;
+}
+
+// Request message
+message HelloRequest {
+  string name = 1;
+}
+
+// Response message
+message HelloReply {
+  string message = 1;
+}
+
+// gRPC Service
+service PeopleInfo {
+    rpc PeopleEmail (NationalityDTO) returns (PersonNameEmailListDTO);
+    rpc Person (HelloRequest) returns (HelloReply);
+}

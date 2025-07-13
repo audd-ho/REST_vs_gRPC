@@ -1,0 +1,51 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.example.gRPCAttempt.gRPC.peopleimage";
+// option java_outer_classname = "GreetProto";
+
+package peopleimage;
+
+import "enums.proto";
+import "PersonImage.proto";
+import "google/protobuf/empty.proto";
+
+message NationalityDTO {
+    people.Nations nationality = 1;
+}
+
+message IdentificationPassportNationalityDTO {
+    string identificationNumber = 1;
+    string passportNumber = 2;
+    people.Nations nationality = 3;
+}
+
+message PersonImageNameEmailDTO {
+    string name = 1;
+    string email = 2;
+    string biometrics = 3;
+}
+
+message PersonImageNameEmailListDTO {
+    repeated PersonImageNameEmailDTO personImageNameEmailList = 1;
+}
+
+// Request message
+message HelloRequest {
+  string name = 1;
+}
+
+// Response message
+message HelloReply {
+  string message = 1;
+}
+
+// gRPC Service
+service PeopleInfo {
+    rpc Hello (google.protobuf.Empty) returns (HelloReply);
+    rpc HelloName (HelloRequest) returns (HelloReply);
+
+    rpc NationalityImage (NationalityDTO) returns (PersonImageProtobufListDTO);
+    rpc PersonImage (IdentificationPassportNationalityDTO) returns (PersonImageProtobufDTO);
+    rpc PeopleEmailImage (NationalityDTO) returns (PersonImageNameEmailListDTO);
+}

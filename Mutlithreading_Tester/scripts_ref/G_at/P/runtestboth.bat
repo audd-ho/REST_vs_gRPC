@@ -1,0 +1,1 @@
+. testboth.bat &> testResult.txt

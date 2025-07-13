@@ -1,0 +1,1 @@
+. PI_B_testboth.bat &> PI_B_testResult.txt
