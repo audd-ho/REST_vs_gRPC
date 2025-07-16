@@ -6,7 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/gRPCAttempt/pom.xml" />
         <option value="$PROJECT_DIR$/RESTAttempt/pom.xml" />
-        <option value="$PROJECT_DIR$/Mutlithreading_Tester/pom.xml" />
+        <option value="$PROJECT_DIR$/Multithreading_Tester/pom.xml" />
       </list>
     </option>
   </component>
