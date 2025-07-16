@@ -1,0 +1,384 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< com.example:Multithreading_Tester >------------------
+[INFO] Building Multithreading_Tester 0.0.1-SNAPSH	OT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:3.5.2:run (default-cli) > test-compile @ Multithreading_Tester >>>
+[INFO] 
+[INFO] --- protobuf-maven-plugin:3.4.2:generate (generate) @ Multithreading_Tester ---
+[INFO] Ignoring provided path C:\Users\audricho\Documents\ForOfficialDemo\Multithreading_Tester\src\main\protobuf as it does not appear to actually exist
+[INFO] Attempting to resolve artifact com.google.protobuf:protoc:exe:windows-x86_64:4.30.2
+[INFO] Attempting to resolve artifact io.grpc:protoc-gen-grpc-java:exe:windows-x86_64:1.72.0
+[INFO] Registering C:\Users\audricho\Documents\ForOfficialDemo\Multithreading_Tester\target\generated-sources\protobuf as a Maven main source root
+[INFO] Registering C:\Users\audricho\Documents\ForOfficialDemo\Multithreading_Tester\target\generated-sources\protobuf as a Maven main source root
+[INFO] Found 8 proto source files and 0 descriptor files to compile, but all are up-to-date so none will be built this time
+[INFO] NOTHING TO DO: There is nothing to do. If this is unexpected, review the above logs for more details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ Multithreading_Tester ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.14.0:compile (default-compile) @ Multithreading_Tester ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ Multithreading_Tester ---
+[INFO] skip non existing resourceDirectory C:\Users\audricho\Documents\ForOfficialDemo\Multithreading_Tester\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.14.0:testCompile (default-testCompile) @ Multithreading_Tester ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:3.5.2:run (default-cli) < test-compile @ Multithreading_Tester <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:3.5.2:run (default-cli) @ Multithreading_Tester ---
+[INFO] Attaching agents: []
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< com.example:Multithreading_Tester >------------------
+[INFO] Building Multithreading_Tester 0.0.1-SNAPSH	OT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:3.5.2:run (default-cli) > test-compile @ Multithreading_Tester >>>
+[INFO] 
+[INFO] --- protobuf-maven-plugin:3.4.2:generate (generate) @ Multithreading_Tester ---
+[INFO] Ignoring provided path C:\Users\audricho\Documents\ForOfficialDemo\Multithreading_Tester\src\main\protobuf as it does not appear to actually exist
+[INFO] Attempting to resolve artifact com.google.protobuf:protoc:exe:windows-x86_64:4.30.2
+[INFO] Attempting to resolve artifact io.grpc:protoc-gen-grpc-java:exe:windows-x86_64:1.72.0
+[INFO] Registering C:\Users\audricho\Documents\ForOfficialDemo\Multithreading_Tester\target\generated-sources\protobuf as a Maven main source root
+[INFO] Registering C:\Users\audricho\Documents\ForOfficialDemo\Multithreading_Tester\target\generated-sources\protobuf as a Maven main source root
+[INFO] Found 8 proto source files and 0 descriptor files to compile, but all are up-to-date so none will be built this time
+[INFO] NOTHING TO DO: There is nothing to do. If this is unexpected, review the above logs for more details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ Multithreading_Tester ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.14.0:compile (default-compile) @ Multithreading_Tester ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ Multithreading_Tester ---
+[INFO] skip non existing resourceDirectory C:\Users\audricho\Documents\ForOfficialDemo\Multithreading_Tester\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.14.0:testCompile (default-testCompile) @ Multithreading_Tester ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:3.5.2:run (default-cli) < test-compile @ Multithreading_Tester <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:3.5.2:run (default-cli) @ Multithreading_Tester ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.2)
+
+2025-07-16T12:06:05.167+08:00  INFO 46512 --- [Multithreading_Tester] [           main] c.e.M.MutlithreadingTesterApplication    : Starting MutlithreadingTesterApplication using Java 17.0.12 with PID 46512 (C:\Users\audricho\Documents\ForOfficialDemo\Multithreading_Tester\target\classes started by audricho in C:\Users\audricho\Documents\ForOfficialDemo\Multithreading_Tester)
+2025-07-16T12:06:05.170+08:00  INFO 46512 --- [Multithreading_Tester] [           main] c.e.M.MutlithreadingTesterApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-07-16T12:06:06.012+08:00  INFO 46512 --- [Multithreading_Tester] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-16T12:06:06.221+08:00  INFO 46512 --- [Multithreading_Tester] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 199 ms. Found 3 JPA repository interfaces.
+2025-07-16T12:06:07.033+08:00  INFO 46512 --- [Multithreading_Tester] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8090 (http)
+2025-07-16T12:06:07.047+08:00  INFO 46512 --- [Multithreading_Tester] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-16T12:06:07.047+08:00  INFO 46512 --- [Multithreading_Tester] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-16T12:06:07.138+08:00  INFO 46512 --- [Multithreading_Tester] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-16T12:06:07.143+08:00  INFO 46512 --- [Multithreading_Tester] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1924 ms
+2025-07-16T12:06:07.233+08:00  INFO 46512 --- [Multithreading_Tester] [           main] toConfiguration$GrpcServletConfiguration : Registering gRPC service: grpc.reflection.v1.ServerReflection
+2025-07-16T12:06:07.234+08:00  INFO 46512 --- [Multithreading_Tester] [           main] toConfiguration$GrpcServletConfiguration : Registering gRPC service: grpc.health.v1.Health
+2025-07-16T12:06:07.438+08:00  INFO 46512 --- [Multithreading_Tester] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-16T12:06:07.500+08:00  INFO 46512 --- [Multithreading_Tester] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-16T12:06:07.541+08:00  INFO 46512 --- [Multithreading_Tester] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-16T12:06:07.861+08:00  INFO 46512 --- [Multithreading_Tester] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-16T12:06:07.898+08:00  INFO 46512 --- [Multithreading_Tester] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-16T12:06:08.101+08:00  INFO 46512 --- [Multithreading_Tester] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-07-16T12:06:08.103+08:00  INFO 46512 --- [Multithreading_Tester] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-16T12:06:08.128+08:00  WARN 46512 --- [Multithreading_Tester] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-16T12:06:08.153+08:00  INFO 46512 --- [Multithreading_Tester] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-16T12:06:09.356+08:00  INFO 46512 --- [Multithreading_Tester] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-16T12:06:09.444+08:00  INFO 46512 --- [Multithreading_Tester] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-16T12:06:09.999+08:00  WARN 46512 --- [Multithreading_Tester] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-16T12:06:10.591+08:00  INFO 46512 --- [Multithreading_Tester] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-07-16T12:06:10.691+08:00  INFO 46512 --- [Multithreading_Tester] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8090 (http) with context path '/'
+2025-07-16T12:06:10.702+08:00  INFO 46512 --- [Multithreading_Tester] [           main] c.e.M.MutlithreadingTesterApplication    : Started MutlithreadingTesterApplication in 6.059 seconds (process running for 6.593)
+Pre-actual, Caching - START
+Running GeneralTesting
+GeneralTesting: 922
+Running GeneralTesting
+GeneralTesting: 1763
+Running GeneralTesting
+GeneralTesting: 1438
+Running GeneralTesting
+GeneralTesting: 816
+Pre-actual, Caching - END
+stubGRPCPeoplePeopleInfoServiceStub P-R
+Running GeneralTesting
+GeneralTesting: 301
+END
+stubGRPCPeopleimagePeopleInfoServiceStub PI-R protobuf-String
+Running GeneralTesting
+GeneralTesting: 1536
+END
+stubGRPCPeopleimagePeopleInfoServiceStub PI-R protobuf-Bytes
+Running GeneralTesting
+GeneralTesting: 1426
+END
+stubGRPCPeopleimagePeopleInfoBServiceStub PIB-R protobuf-Bytes
+Running GeneralTesting
+GeneralTesting: 608
+END
+stubGRPCPeoplePeopleInfoServiceStub P-R
+Running GeneralTesting
+GeneralTesting: 332
+END
+stubGRPCPeopleimagePeopleInfoServiceStub PI-R protobuf-String
+Running GeneralTesting
+GeneralTesting: 1498
+END
+stubGRPCPeopleimagePeopleInfoServiceStub PI-R protobuf-Bytes
+Running GeneralTesting
+GeneralTesting: 1350
+END
+stubGRPCPeopleimagePeopleInfoBServiceStub PIB-R protobuf-Bytes
+Running GeneralTesting
+GeneralTesting: 680
+END
+stubGRPCPeoplePeopleInfoServiceStub P-R
+Running GeneralTesting
+GeneralTesting: 325
+END
+stubGRPCPeopleimagePeopleInfoServiceStub PI-R protobuf-String
+Running GeneralTesting
+GeneralTesting: 1673
+END
+stubGRPCPeopleimagePeopleInfoServiceStub PI-R protobuf-Bytes
+Running GeneralTesting
+GeneralTesting: 1675
+END
+stubGRPCPeopleimagePeopleInfoBServiceStub PIB-R protobuf-Bytes
+Running GeneralTesting
+GeneralTesting: 647
+END
+stubGRPCPeoplePeopleInfoServiceStub P-R
+Running GeneralTesting
+GeneralTesting: 297
+END
+stubGRPCPeopleimagePeopleInfoServiceStub PI-R protobuf-String
+Running GeneralTesting
+GeneralTesting: 1542
+END
+stubGRPCPeopleimagePeopleInfoServiceStub PI-R protobuf-Bytes
+Running GeneralTesting
+GeneralTesting: 1455
+END
+stubGRPCPeopleimagePeopleInfoBServiceStub PIB-R protobuf-Bytes
+Running GeneralTesting
+GeneralTesting: 635
+END
+stubGRPCPeoplePeopleInfoServiceStub P-R
+Running GeneralTesting
+GeneralTesting: 287
+END
+stubGRPCPeopleimagePeopleInfoServiceStub PI-R protobuf-String
+Running GeneralTesting
+GeneralTesting: 1503
+END
+stubGRPCPeopleimagePeopleInfoServiceStub PI-R protobuf-Bytes
+Running GeneralTesting
+GeneralTesting: 1324
+END
+stubGRPCPeopleimagePeopleInfoBServiceStub PIB-R protobuf-Bytes
+Running GeneralTesting
+GeneralTesting: 570
+END
+stubGRPCPeoplePeopleInfoServiceStub P-R
+Running GeneralTesting
+GeneralTesting: 242
+END
+stubGRPCPeopleimagePeopleInfoServiceStub PI-R protobuf-String
+Running GeneralTesting
+GeneralTesting: 1426
+END
+stubGRPCPeopleimagePeopleInfoServiceStub PI-R protobuf-Bytes
+Running GeneralTesting
+GeneralTesting: 1407
+END
+stubGRPCPeopleimagePeopleInfoBServiceStub PIB-R protobuf-Bytes
+Running GeneralTesting
+GeneralTesting: 661
+END
+stubGRPCPeoplePeopleInfoServiceStub P-R
+Running GeneralTesting
+GeneralTesting: 301
+END
+stubGRPCPeopleimagePeopleInfoServiceStub PI-R protobuf-String
+Running GeneralTesting
+GeneralTesting: 1472
+END
+stubGRPCPeopleimagePeopleInfoServiceStub PI-R protobuf-Bytes
+Running GeneralTesting
+GeneralTesting: 1370
+END
+stubGRPCPeopleimagePeopleInfoBServiceStub PIB-R protobuf-Bytes
+Running GeneralTesting
+GeneralTesting: 588
+END
+stubGRPCPeoplePeopleInfoServiceStub P-R
+Running GeneralTesting
+GeneralTesting: 215
+END
+stubGRPCPeopleimagePeopleInfoServiceStub PI-R protobuf-String
+Running GeneralTesting
+GeneralTesting: 1585
+END
+stubGRPCPeopleimagePeopleInfoServiceStub PI-R protobuf-Bytes
+Running GeneralTesting
+GeneralTesting: 1491
+END
+stubGRPCPeopleimagePeopleInfoBServiceStub PIB-R protobuf-Bytes
+Running GeneralTesting
+GeneralTesting: 625
+END
+stubGRPCPeoplePeopleInfoServiceStub P-R
+Running GeneralTesting
+GeneralTesting: 264
+END
+stubGRPCPeopleimagePeopleInfoServiceStub PI-R protobuf-String
+Running GeneralTesting
+GeneralTesting: 1516
+END
+stubGRPCPeopleimagePeopleInfoServiceStub PI-R protobuf-Bytes
+Running GeneralTesting
+GeneralTesting: 1374
+END
+stubGRPCPeopleimagePeopleInfoBServiceStub PIB-R protobuf-Bytes
+Running GeneralTesting
+GeneralTesting: 617
+END
+stubGRPCPeoplePeopleInfoServiceStub P-R
+Running GeneralTesting
+GeneralTesting: 278
+END
+stubGRPCPeopleimagePeopleInfoServiceStub PI-R protobuf-String
+Running GeneralTesting
+GeneralTesting: 1492
+END
+stubGRPCPeopleimagePeopleInfoServiceStub PI-R protobuf-Bytes
+Running GeneralTesting
+GeneralTesting: 1396
+END
+stubGRPCPeopleimagePeopleInfoBServiceStub PIB-R protobuf-Bytes
+Running GeneralTesting
+GeneralTesting: 614
+END
+stubGRPCPeoplePeopleInfoServiceStub P-R
+Running GeneralTesting
+GeneralTesting: 290
+END
+stubGRPCPeopleimagePeopleInfoServiceStub PI-R protobuf-String
+Running GeneralTesting
+GeneralTesting: 1564
+END
+stubGRPCPeopleimagePeopleInfoServiceStub PI-R protobuf-Bytes
+Running GeneralTesting
+GeneralTesting: 1418
+END
+stubGRPCPeopleimagePeopleInfoBServiceStub PIB-R protobuf-Bytes
+Running GeneralTesting
+GeneralTesting: 630
+END
+stubGRPCPeoplePeopleInfoServiceStub P-R
+Running GeneralTesting
+GeneralTesting: 286
+END
+stubGRPCPeopleimagePeopleInfoServiceStub PI-R protobuf-String
+Running GeneralTesting
+GeneralTesting: 1461
+END
+stubGRPCPeopleimagePeopleInfoServiceStub PI-R protobuf-Bytes
+Running GeneralTesting
+GeneralTesting: 1375
+END
+stubGRPCPeopleimagePeopleInfoBServiceStub PIB-R protobuf-Bytes
+Running GeneralTesting
+GeneralTesting: 620
+END
+stubGRPCPeoplePeopleInfoServiceStub P-R
+Running GeneralTesting
+GeneralTesting: 247
+END
+stubGRPCPeopleimagePeopleInfoServiceStub PI-R protobuf-String
+Running GeneralTesting
+GeneralTesting: 1531
+END
+stubGRPCPeopleimagePeopleInfoServiceStub PI-R protobuf-Bytes
+Running GeneralTesting
+GeneralTesting: 1428
+END
+stubGRPCPeopleimagePeopleInfoBServiceStub PIB-R protobuf-Bytes
+Running GeneralTesting
+GeneralTesting: 642
+END
+stubGRPCPeoplePeopleInfoServiceStub P-R
+Running GeneralTesting
+GeneralTesting: 256
+END
+stubGRPCPeopleimagePeopleInfoServiceStub PI-R protobuf-String
+Running GeneralTesting
+GeneralTesting: 1545
+END
+stubGRPCPeopleimagePeopleInfoServiceStub PI-R protobuf-Bytes
+Running GeneralTesting
+GeneralTesting: 1455
+END
+stubGRPCPeopleimagePeopleInfoBServiceStub PIB-R protobuf-Bytes
+Running GeneralTesting
+GeneralTesting: 726
+END
+stubGRPCPeoplePeopleInfoServiceStub P-R
+Running GeneralTesting
+GeneralTesting: 348
+END
+stubGRPCPeopleimagePeopleInfoServiceStub PI-R protobuf-String
+Running GeneralTesting
+GeneralTesting: 1493
+END
+stubGRPCPeopleimagePeopleInfoServiceStub PI-R protobuf-Bytes
+Running GeneralTesting
+GeneralTesting: 1412
+END
+stubGRPCPeopleimagePeopleInfoBServiceStub PIB-R protobuf-Bytes
+Running GeneralTesting
+GeneralTesting: 656
+END
+stubGRPCPeoplePeopleInfoServiceStub P-R
+Running GeneralTesting
+GeneralTesting: 245
+END
+stubGRPCPeopleimagePeopleInfoServiceStub PI-R protobuf-String
+Running GeneralTesting
+2025-07-16T12:07:14.482+08:00  INFO 46512 --- [Multithreading_Tester] [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+GeneralTesting: 1573
+END
+stubGRPCPeopleimagePeopleInfoServiceStub PI-R protobuf-Bytes
+Running GeneralTesting
+2025-07-16T12:07:15.699+08:00  INFO 46512 --- [Multithreading_Tester] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-16T12:07:15.705+08:00  INFO 46512 --- [Multithreading_Tester] [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-16T12:07:15.709+08:00  INFO 46512 --- [Multithreading_Tester] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-16T12:07:15.712+08:00  INFO 46512 --- [Multithreading_Tester] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:16 min
+[INFO] Finished at: 2025-07-16T12:07:16+08:00
+[INFO] ------------------------------------------------------------------------

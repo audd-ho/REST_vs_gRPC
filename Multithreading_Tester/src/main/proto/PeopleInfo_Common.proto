@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.example.Multithreading_Tester.gRPC.peopleimage";
+// option java_outer_classname = "GreetProto";
+
+package peopleimage;
+
+import "enums.proto";
+//import "PersonImage.proto";
+//import "PersonImageBytes.proto";
+//import "google/protobuf/empty.proto";
+
+
+message NationalityDTO {
+    people.Nations nationality = 1;
+}
+
+message IdentificationPassportNationalityDTO {
+    string identificationNumber = 1;
+    string passportNumber = 2;
+    people.Nations nationality = 3;
+}
