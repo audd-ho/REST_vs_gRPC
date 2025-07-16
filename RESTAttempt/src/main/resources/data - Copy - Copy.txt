@@ -1,0 +1,122 @@
+INSERT INTO person (identification_number, passport_number, email, name, age, nationality, current_country, marital_status, children) VALUES ('S9012345P', 'P1234567N', 'DefaultEmail@gmail.com', 'DefaultName', 34, 'SG', 'MY', 'Married', 6);
+INSERT INTO person (identification_number, passport_number, email, name, age, nationality, current_country, marital_status, children) VALUES ('S1234567G', 'K1234567K', 'alice@xy.com', 'alice', 34, 'SG', 'TH', 'Married', 6);
+INSERT INTO person (identification_number, passport_number, email, name, age, nationality, current_country, marital_status, children) VALUES ('U1234567S', 'X1234567Z', 'bob@yx.com', 'bob', 37, 'US', 'CH', 'Single', 0);
+INSERT INTO person (identification_number, passport_number, email, name, age, nationality, current_country, marital_status, children) VALUES ('M1234567Y', 'E1234567E', 'charlie@yz.com', 'charlie', 39, 'MY', 'SG', 'Divorced', 10);;
+INSERT INTO person (identification_number, passport_number, email, name, age, nationality, current_country, marital_status, children) VALUES ('E1234567S', 'N1234567M', 'Zeno@zy.com', 'Zeno', 89, 'ES', 'ID', 'Married', 34);
+
+INSERT INTO person (
+    identification_number,
+    passport_number,
+    email,
+    name,
+    age,
+    nationality,
+    current_country,
+    marital_status,
+    children
+) VALUES
+('S9384752G', 'E4569283N', 'li.mei89@gmail.com', 'Li Mei', 36, 'SG', 'JP', 'Married', 1),
+('987-56-3201', '509823641', 'michael.jones88@outlook.com', 'Michael Jones', 42, 'US', 'TH', 'Divorced', 2),
+('JP20394857', 'TR7483209', 'hiroshi.k@protonmail.com', 'Hiroshi Kondo', 29, 'JP', 'SG', 'Single', 0),
+('T2856391B', 'E9842031P', 'nisha.r@hotmail.com', 'Nisha Ramesh', 33, 'SG', 'US', 'Married', 3),
+('A1234567890', 'M145982378', 'alicia.perez79@yahoo.com', 'Alicia Pérez', 45, 'MX', 'JP', 'Married', 2),
+('TH590283741', 'T093284719', 'anucha.b@outlook.com', 'Anucha Boonmee', 31, 'TH', 'SG', 'Single', 0),
+('G8547201P', 'E2038471M', 'rajiv.das@protonmail.com', 'Rajiv Das', 39, 'IN', 'US', 'Married', 2),
+('DE837204562', 'C384720564', 'lena.schmidt@gmail.com', 'Lena Schmidt', 27, 'DE', 'SG', 'Single', 0),
+('FR849201374', 'FA09237416', 'emilie.dubois@outlook.com', 'Émilie Dubois', 38, 'FR', 'TH', 'Divorced', 1),
+('T1239823D', 'E2039482Q', 'wan.lee86@gmail.com', 'Wan Lee', 40, 'SG', 'MX', 'Others', 4);
+
+INSERT INTO person (
+    identification_number,
+    passport_number,
+    email,
+    name,
+    age,
+    nationality,
+    current_country,
+    marital_status,
+    children
+) VALUES
+('JP47291028', 'A3948572K', 'kenji.tanaka48@outlook.com', 'Kenji Tanaka', 34, 'JP', 'SG', 'Married', 2),
+('S7293846G', 'E2093847H', 'sophia.lee55@gmail.com', 'Sophia Lee', 29, 'SG', 'KR', 'Single', 0),
+('DE849273615', 'C5820194P', 'hans.schneider19@protonmail.com', 'Hans Schneider', 45, 'DE', 'FR', 'Married', 3),
+('A7382947581', 'M4923847B', 'juan.martinez81@yahoo.com', 'Juan Martinez', 38, 'MX', 'JP', 'Married', 2),
+('TH948273015', 'T3820193X', 'anong.suwannakit60@hotmail.com', 'Anong Suwannakit', 41, 'TH', 'US', 'Divorced', 1),
+('FR291837462', 'FA9382017L', 'marie.dubois47@gmail.com', 'Marie Dubois', 31, 'FR', 'SG', 'Single', 0),
+('KR473920156', 'K4938271N', 'yuna.kim67@outlook.com', 'Yuna Kim', 28, 'KR', 'MX', 'Married', 1),
+('US849-10-3728', '603918273', 'michael.brown73@gmail.com', 'Michael Brown', 36, 'US', 'IN', 'Married', 2),
+('IN834928374920', 'B8293746D', 'raj.kapoor65@protonmail.com', 'Raj Kapoor', 44, 'IN', 'TH', 'Married', 3),
+('MY837492039281', 'D7382916F', 'aiman.hassan54@yahoo.com', 'Aiman Hassan', 39, 'MY', 'JP', 'Others', 2),
+('SG4928371H', 'E7392018K', 'aisha.lim32@outlook.com', 'Aisha Lim', 32, 'SG', 'FR', 'Single', 0),
+('JP59403827', 'J4829301Z', 'akira.yamamoto23@hotmail.com', 'Akira Yamamoto', 30, 'JP', 'US', 'Single', 0),
+('US623-27-4930', '582930174', 'olivia.jones45@gmail.com', 'Olivia Jones', 35, 'US', 'DE', 'Divorced', 1),
+('DE193847205', 'C1938472R', 'lena.meier38@protonmail.com', 'Lena Meier', 27, 'DE', 'MY', 'Single', 0),
+('FR837492016', 'FA3829104E', 'emilie.rossi76@outlook.com', 'Émilie Rossi', 42, 'FR', 'KR', 'Married', 2),
+('TH582910374', 'T2039482P', 'boonchai.krit23@gmail.com', 'Boonchai Krit', 40, 'TH', 'SG', 'Married', 2),
+('IN938271645729', 'D3849201B', 'nisha.patel67@yahoo.com', 'Nisha Patel', 37, 'IN', 'FR', 'Married', 1),
+('KR729384105', 'K2039483M', 'seojun.lee51@gmail.com', 'Seo-jun Lee', 33, 'KR', 'SG', 'Single', 0),
+('MX9283748561', 'M3829104T', 'sofia.garcia29@outlook.com', 'Sofia Garcia', 28, 'MX', 'KR', 'Single', 0),
+('SG9382746T', 'E4938201U', 'wei.chen93@protonmail.com', 'Wei Chen', 46, 'SG', 'JP', 'Divorced', 2);
+
+
+INSERT INTO person_image (identification_number, passport_number, email, name, age, nationality, current_country, marital_status, children, biometrics) VALUES ('S9012345P', 'P1234567N', 'DefaultEmail@gmail.com', 'DefaultName', 34, 'SG', 'MY', 'Married', 6, 'x01');
+INSERT INTO person_image (identification_number, passport_number, email, name, age, nationality, current_country, marital_status, children, biometrics) VALUES ('S1234567G', 'K1234567K', 'alice@xy.com', 'alice', 34, 'SG', 'TH', 'Married', 6, 'x02');
+INSERT INTO person_image (identification_number, passport_number, email, name, age, nationality, current_country, marital_status, children, biometrics) VALUES ('U1234567S', 'X1234567Z', 'bob@yx.com', 'bob', 37, 'US', 'CH', 'Single', 0, 'x03');
+INSERT INTO person_image (identification_number, passport_number, email, name, age, nationality, current_country, marital_status, children, biometrics) VALUES ('M1234567Y', 'E1234567E', 'charlie@yz.com', 'charlie', 39, 'MY', 'SG', 'Divorced', 10, 'x04');
+INSERT INTO person_image (identification_number, passport_number, email, name, age, nationality, current_country, marital_status, children, biometrics) VALUES ('E1234567S', 'N1234567M', 'Zeno@zy.com', 'Zeno', 89, 'ES', 'ID', 'Married', 34, 'x05');
+
+INSERT INTO person_image (
+    identification_number,
+    passport_number,
+    email,
+    name,
+    age,
+    nationality,
+    current_country,
+    marital_status,
+    children,
+    biometrics
+) VALUES
+('S9384752G', 'E4569283N', 'li.mei89@gmail.com', 'Li Mei', 36, 'SG', 'JP', 'Married', 1, 'x06'),
+('987-56-3201', '509823641', 'michael.jones88@outlook.com', 'Michael Jones', 42, 'US', 'TH', 'Divorced', 2, 'x07'),
+('JP20394857', 'TR7483209', 'hiroshi.k@protonmail.com', 'Hiroshi Kondo', 29, 'JP', 'SG', 'Single', 0, 'x08'),
+('T2856391B', 'E9842031P', 'nisha.r@hotmail.com', 'Nisha Ramesh', 33, 'SG', 'US', 'Married', 3, 'x09'),
+('A1234567890', 'M145982378', 'alicia.perez79@yahoo.com', 'Alicia Pérez', 45, 'MX', 'JP', 'Married', 2, 'x10'),
+('TH590283741', 'T093284719', 'anucha.b@outlook.com', 'Anucha Boonmee', 31, 'TH', 'SG', 'Single', 0, 'x11'),
+('G8547201P', 'E2038471M', 'rajiv.das@protonmail.com', 'Rajiv Das', 39, 'IN', 'US', 'Married', 2, 'x12'),
+('DE837204562', 'C384720564', 'lena.schmidt@gmail.com', 'Lena Schmidt', 27, 'DE', 'SG', 'Single', 0, 'x13'),
+('FR849201374', 'FA09237416', 'emilie.dubois@outlook.com', 'Émilie Dubois', 38, 'FR', 'TH', 'Divorced', 1, 'x14'),
+('T1239823D', 'E2039482Q', 'wan.lee86@gmail.com', 'Wan Lee', 40, 'SG', 'MX', 'Others', 4, 'x15');
+
+INSERT INTO person_image (
+    identification_number,
+    passport_number,
+    email,
+    name,
+    age,
+    nationality,
+    current_country,
+    marital_status,
+    children,
+    biometrics
+) VALUES
+('JP47291028', 'A3948572K', 'kenji.tanaka48@outlook.com', 'Kenji Tanaka', 34, 'JP', 'SG', 'Married', 2, 'x16'),
+('S7293846G', 'E2093847H', 'sophia.lee55@gmail.com', 'Sophia Lee', 29, 'SG', 'KR', 'Single', 0, 'x17'),
+('DE849273615', 'C5820194P', 'hans.schneider19@protonmail.com', 'Hans Schneider', 45, 'DE', 'FR', 'Married', 3, 'x18'),
+('A7382947581', 'M4923847B', 'juan.martinez81@yahoo.com', 'Juan Martinez', 38, 'MX', 'JP', 'Married', 2, 'x19'),
+('TH948273015', 'T3820193X', 'anong.suwannakit60@hotmail.com', 'Anong Suwannakit', 41, 'TH', 'US', 'Divorced', 1, 'x20'),
+('FR291837462', 'FA9382017L', 'marie.dubois47@gmail.com', 'Marie Dubois', 31, 'FR', 'SG', 'Single', 0, 'x21'),
+('KR473920156', 'K4938271N', 'yuna.kim67@outlook.com', 'Yuna Kim', 28, 'KR', 'MX', 'Married', 1, 'x22'),
+('US849-10-3728', '603918273', 'michael.brown73@gmail.com', 'Michael Brown', 36, 'US', 'IN', 'Married', 2, 'x23'),
+('IN834928374920', 'B8293746D', 'raj.kapoor65@protonmail.com', 'Raj Kapoor', 44, 'IN', 'TH', 'Married', 3, 'x24'),
+('MY837492039281', 'D7382916F', 'aiman.hassan54@yahoo.com', 'Aiman Hassan', 39, 'MY', 'JP', 'Others', 2, 'x25'),
+('SG4928371H', 'E7392018K', 'aisha.lim32@outlook.com', 'Aisha Lim', 32, 'SG', 'FR', 'Single', 0, 'x26'),
+('JP59403827', 'J4829301Z', 'akira.yamamoto23@hotmail.com', 'Akira Yamamoto', 30, 'JP', 'US', 'Single', 0, 'x27'),
+('US623-27-4930', '582930174', 'olivia.jones45@gmail.com', 'Olivia Jones', 35, 'US', 'DE', 'Divorced', 1, 'x28'),
+('DE193847205', 'C1938472R', 'lena.meier38@protonmail.com', 'Lena Meier', 27, 'DE', 'MY', 'Single', 0, 'x29'),
+('FR837492016', 'FA3829104E', 'emilie.rossi76@outlook.com', 'Émilie Rossi', 42, 'FR', 'KR', 'Married', 2, 'x30'),
+('TH582910374', 'T2039482P', 'boonchai.krit23@gmail.com', 'Boonchai Krit', 40, 'TH', 'SG', 'Married', 2, 'x31'),
+('IN938271645729', 'D3849201B', 'nisha.patel67@yahoo.com', 'Nisha Patel', 37, 'IN', 'FR', 'Married', 1, 'x32'),
+('KR729384105', 'K2039483M', 'seojun.lee51@gmail.com', 'Seo-jun Lee', 33, 'KR', 'SG', 'Single', 0, 'x33'),
+('MX9283748561', 'M3829104T', 'sofia.garcia29@outlook.com', 'Sofia Garcia', 28, 'MX', 'KR', 'Single', 0, 'x34'),
+('SG9382746T', 'E4938201U', 'wei.chen93@protonmail.com', 'Wei Chen', 46, 'SG', 'JP', 'Divorced', 2, 'x35');
