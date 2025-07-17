@@ -66,7 +66,7 @@ public class gRPCcallsTest implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-
+        if (true) {return;}
         System.out.println("Pre-actual, Caching - START");
         GeneralTesting(stubGRPCPeoplePeopleInfoServiceStub::nationality, stubGRPCPeoplePeopleInfoServiceStub::person, stubGRPCPeoplePeopleInfoServiceStub::peopleEmail);
         //Println_GeneralTesting(stubGRPCPeoplePeopleInfoServiceStub::nationality, stubGRPCPeoplePeopleInfoServiceStub::person, stubGRPCPeoplePeopleInfoServiceStub::peopleEmail);

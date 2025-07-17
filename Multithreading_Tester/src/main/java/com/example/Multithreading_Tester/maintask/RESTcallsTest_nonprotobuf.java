@@ -59,7 +59,7 @@ public class RESTcallsTest_nonprotobuf implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-
+        if (true) {return;}
         System.out.println("Pre-actual, Caching - START");
         GeneralTesting(peopleService::nationality, peopleService::person, peopleService::peopleEmail);
         //Println_GeneralTesting(peopleService::nationality, peopleService::person, peopleService::peopleEmail);

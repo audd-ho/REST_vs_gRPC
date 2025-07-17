@@ -61,7 +61,7 @@ public class RESTcallsTest_protobuf implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-
+        if (true) {return;}
         System.out.println("Pre-actual, Caching - START");
         GeneralTesting(peopleProtoService::nationalityJSON, peopleProtoService::personJSON, peopleProtoService::peopleEmailJSON);
         //Println_GeneralTesting(peopleProtoService::nationalityJSON, peopleProtoService::personJSON, peopleProtoService::peopleEmailJSON);
